@@ -1,4 +1,6 @@
 import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const FONT_WEIGHTS = {
     subtitle: { min: 100, max: 400, default: 100 },
@@ -10,7 +12,7 @@ const renderText = (text, className, baseWeight = 400) => {
         <span
             key={i}
             className={className}
-            style={{ fontVariationSettings: `'whgt %{baseWeight}` }}
+            style={{ fontVariationSettings: `'wght' %{baseWeight}` }}
         >
             {char === " " ? "\u00A0" : char}
         </span>
@@ -21,11 +23,40 @@ const setupTextHover = (container, type) => {
     if (!container) return;
     const letters = container.querySelectorAll("span");
     const { min, max, default: base } = FONT_WEIGHTS[type];
+
+    const animateLetter = (letter, weight, duration = 0.25) => {
+        return gsap.to(letter, {
+            duration,
+            ease: "power2.out",
+            fontVariationSettings: `'wght' ${weight}`,
+        })
+    }
+
+    const handleMouseMove = (e) => {
+        const { left } = e.target.getBoundingClientRect();
+        const mouseX = e.clientX - left;
+
+        letters.forEach((letter) => {
+            const { left: l, width: w } = letter.getBoundingClientRect();
+            const distance = Math.abs(mouseX - (l - left + w / 2));
+            const intensity = Math.exp(-(distance ** 2) / 2000);
+
+            animateLetter(letter, min + (max - min) * intensity);
+        })
+    }
+
+    container.addEventListener("mousemove", handleMouseMove);
 }
+
 
 const Welcome = () => {
     const titleRef = useRef(null);
     const subtitleRef = useRef(null);
+
+    useGSAP(() => {
+        setupTextHover(titleRef.current, "title");
+        setupTextHover(subtitleRef.current, "subtitle");
+    }, []);
 
     return <section id="welcome">
         <p ref={subtitleRef}>
