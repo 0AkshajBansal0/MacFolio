@@ -1,13 +1,30 @@
 import { useRef } from "react";
 
+const renderText = (text, className, baseWeight = 400) => {
+    return [...text].map((char, i) => (
+        <span
+            key={i}
+            className={className}
+            style={{ fontVariationSettings: `'whgt %{baseWeight}` }}
+        >
+            {char === " " ? "\u00A0" : char}
+        </span>
+    ))
+}
 const Welcome = () => {
     const titleRef = useRef(null);
     const subtitleRef = useRef(null);
 
     return <section id="welcome">
-        <p ref={subtitleRef}>Hey, I'm Akshaj! Welcome to my</p>
+        <p ref={subtitleRef}>
+            {renderText(
+                "Hey, I'm Akshaj! Welcome to my",
+                "text-3xl , font-georama",
+                100,
+            )}
+        </p>
         <h1 ref={titleRef} className="mt-7">
-            Portfolio
+            {renderText("Portfolio", "text-9xl italic font-georama", 700)}
         </h1>
 
         <div className="small-screen">
