@@ -104,28 +104,32 @@ const linkedinPosts = [
 
 const techStack = [
   {
+    category: "Programming",
+    items: ["Python", "Java", "C++", "C", "JavaScript"],
+  },
+  {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
-  },
-  {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["React.js", "Next.js", "HTML", "CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express.js", "Spring Boot"],
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    items: ["MongoDB", "MySQL", "Firebase"],
+  },
+  {
+    category: "Data & ML",
+    items: ["NumPy", "Pandas"],
+  },
+  {
+    category: "Core CS",
+    items: ["Data Structures & Algorithms", "OOP", "DBMS"],
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    items: ["Git", "GitHub", "VS Code"],
   },
 ];
 
