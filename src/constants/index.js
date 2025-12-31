@@ -74,55 +74,62 @@ const dockApps = [
   },
 ];
 
-const blogPosts = [
+const linkedinPosts = [
   {
     id: 1,
-    date: "Sep 2, 2025",
+    date: "Jan 8, 2025",
     title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+      "Oracle Cloud Infrastructure 2024 – Certified Foundations Associate",
+    image: "/images/oracle-oci.jpg",
+    link: "https://www.linkedin.com/posts/akshaj-bansal-44a6211b8_oraclecloud-cloudcomputing-oci-activity-7298039622960300032-mVNQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKjMzoBvmB60s4265apo2wRnyl-sSCuWVs", 
   },
   {
     id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    date: "Mar 23, 2025",
+    title:
+      "CAD 3.0 Hackathon: Built RhythmX – A Platform for Artists to Monetize Music",
+    image: "/images/cad3-hackathon.jpg",
+    link: "https://www.linkedin.com/posts/akshaj-bansal-44a6211b8_hackathon-debugging-problemsolving-activity-7310499327779487744-uFyK?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKjMzoBvmB60s4265apo2wRnyl-sSCuWVs",
   },
   {
     id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    date: "Jul 17, 2025",
+    title:
+      "Technology Intern at Airtel Payments Bank – Backend & SDLC Experience",
+    image: "/images/airtel-internship.jpg",
+    link: "https://www.linkedin.com/posts/akshaj-bansal-44a6211b8_excited-to-share-my-internship-experience-activity-7351666364736040960-t8XW?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKjMzoBvmB60s4265apo2wRnyl-sSCuWVs",
   },
 ];
 
+
 const techStack = [
   {
+    category: "Programming",
+    items: ["Python", "Java", "C++", "C", "JavaScript"],
+  },
+  {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
-  },
-  {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["React.js", "Next.js", "HTML", "CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express.js", "Spring Boot"],
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    items: ["MongoDB", "MySQL", "Firebase"],
+  },
+  {
+    category: "Data & ML",
+    items: ["NumPy", "Pandas"],
+  },
+  {
+    category: "Core CS",
+    items: ["Data Structures & Algorithms", "OOP", "DBMS"],
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    items: ["Git", "GitHub", "VS Code"],
   },
 ];
 
@@ -208,7 +215,7 @@ export {
   navLinks,
   navIcons,
   dockApps,
-  blogPosts,
+  linkedinPosts,
   techStack,
   socials,
   photosLinks,
