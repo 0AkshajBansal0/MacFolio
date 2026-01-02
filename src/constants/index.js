@@ -81,7 +81,7 @@ const linkedinPosts = [
     title:
       "Oracle Cloud Infrastructure 2024 – Certified Foundations Associate",
     image: "/images/oracle-oci.jpg",
-    link: "https://www.linkedin.com/posts/akshaj-bansal-44a6211b8_oraclecloud-cloudcomputing-oci-activity-7298039622960300032-mVNQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKjMzoBvmB60s4265apo2wRnyl-sSCuWVs", 
+    link: "https://www.linkedin.com/posts/akshaj-bansal-44a6211b8_oraclecloud-cloudcomputing-oci-activity-7298039622960300032-mVNQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKjMzoBvmB60s4265apo2wRnyl-sSCuWVs",
   },
   {
     id: 2,
@@ -136,33 +136,34 @@ const techStack = [
 const socials = [
   {
     id: 1,
-    text: "Github",
+    text: "GitHub",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/0AkshajBansal0",
   },
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
-  {
-    id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
-  },
-  {
-    id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/akshaj-bansal-44a6211b8/",
+  },
+  {
+    id: 3,
+    text: "Instagram",
+    icon: "/icons/instagram.png",
+    bg: "#ff866b",
+    link: "https://www.instagram.com/akshajbansal/",
+  },
+  {
+    id: 4,
+    text: "Email",
+    icon: "/icons/gmail.png",
+    bg: "#4bcb63",
+    link: "mailto:bansalakshaj@gmail.com",
   },
 ];
+
 
 const photosLinks = [
   {
@@ -195,19 +196,19 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/gal1.JPEG",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/gal2.JPEG",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/gal4.JPEG",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/gal3.JPEG",
   },
 ];
 
@@ -229,41 +230,41 @@ const WORK_LOCATION = {
   icon: "/icons/work.svg",
   kind: "folder",
   children: [
-    // ▶ Project 1
+    // ▶ Project 1 — Rhythmix
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Rhythmix",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      position: "top-10 left-5",
+      windowPosition: "top-[5vh] left-5",
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Rhythmix.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "Rhythmix is a music NFT marketplace that allows artists to tokenize and sell their music as NFTs.",
+            "The platform enables creators to mint NFTs and list their music in a digital marketplace.",
+            "Secure user authentication was implemented to ensure safe access and ownership handling.",
+            "Firebase was integrated to support real-time updates and a smooth user experience.",
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "rhythmix.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://rhythmix-rho.vercel.app/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "rhythmix.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -272,20 +273,20 @@ const WORK_LOCATION = {
         },
         {
           id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
+          name: "Github.com",
+          icon: "/images/safari.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
+          fileType: "url",
+          href: "https://github.com/0AkshajBansal0/Rhythmix",
           position: "top-60 right-20",
         },
       ],
     },
 
-    // ▶ Project 2
+    // ▶ Project 2 — DeepTrace
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "DeepTrace",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -293,30 +294,30 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "DeepTrace.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "DeepTrace is an AI-powered forensic tool designed to detect AI-generated content, deepfakes, and manipulated media.",
+            "The system performs multi-stage analysis across text, images, and metadata to identify synthetic or altered content.",
+            "OpenAI and Replicate APIs were integrated to power advanced detection and classification workflows.",
+            "The project focuses on accuracy, scalability, and real-world applicability in digital content verification.",
           ],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "deeptrace.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://deep-trace-web.vercel.app/",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "deeptrace.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -325,20 +326,20 @@ const WORK_LOCATION = {
         },
         {
           id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
+          name: "Github.com",
+          icon: "/images/safari.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
+          fileType: "url",
+          href: "https://github.com/0AkshajBansal0/DeepTrace",
           position: "top-60 left-5",
         },
       ],
     },
 
-    // ▶ Project 3
+    // ▶ Project 3 — AI Trip Planner
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "AI Trip Planner",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -346,43 +347,43 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "AI Trip Planner.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            "AI Trip Planner is a full-stack, AI-powered application that generates complete travel itineraries based on user input.",
+            "Users can specify destination, budget, duration, and travel companions to receive a detailed travel plan.",
+            "The generated itinerary includes hotels, schedules, estimated costs, and locations.",
+            "The project combines AI logic with authentication and data persistence to deliver a practical, real-world solution.",
           ],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "ai-trip-planner.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://ai-trip-plannerakshaj.vercel.app/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "ai-trip-planner.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
+          imageUrl: "/images/project-3.jpg",
         },
         {
           id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
+          name: "Github.com",
+          icon: "/images/safari.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
+          fileType: "url",
+          href: "https://github.com/0AkshajBansal0/AI-Trip-Planner",
           position: "top-60 right-20",
         },
       ],
@@ -404,7 +405,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/images/akshaj.JPEG",
     },
     {
       id: 2,
@@ -413,7 +414,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      imageUrl: "/images/akshaj-2.JPG",
     },
     {
       id: 3,
@@ -422,7 +423,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/akshaj-3.JPEG",
     },
     {
       id: 4,
@@ -432,12 +433,11 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/akshaj.JPEG",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hey, I’m Akshaj 👋 - a developer who enjoys building clean, fast, and reliable products.",
+        "I mainly work with JavaScript, React, and modern backend tools, focusing on solid logic and smooth user experience. I value clean UI, good UX, and writing code that’s easy to understand and maintain.",
+        "Outside of dev, you’ll usually find me watching F1, overanalyzing race strategies, or running on coffee while polishing side projects ☕🏎️"
       ],
     },
   ],
@@ -456,8 +456,6 @@ const RESUME_LOCATION = {
       icon: "/images/pdf.png",
       kind: "file",
       fileType: "pdf",
-      // you can add `href` if you want to open a hosted resume
-      // href: "/your/resume/path.pdf",
     },
   ],
 };
